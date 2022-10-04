@@ -2,4 +2,9 @@
     <string name="app_name">sandro</string>
     <string name="cricbuzz">cricbuzz</string>
     <string name="espncricinfo">espncricinfo</string>
+    <string name="jiosaavn">jiosaavn</string>
+    <string name="movierulzhd">MovierulzHD</string>
+    <string name="movierulz">movierulz</string>
+    <string name="livescore">livescore</string>
+    <string name="sandro">SANDRO</string>
 </resources>
