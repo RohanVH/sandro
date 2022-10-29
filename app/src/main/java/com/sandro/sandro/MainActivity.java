@@ -15,7 +15,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class MainActivity extends AppCompatActivity {
-    private Button myBtn, myBtn1,myBtn2,myBtn3,myBtn4,myBtn5;
+    private Button myBtn, myBtn1,myBtn2,myBtn3,myBtn4,myBtn5,myBtn6;
     String[] urls = new String[50];
 
     @Override
@@ -31,12 +31,14 @@ public class MainActivity extends AppCompatActivity {
         myBtn3 = findViewById(R.id.livescore);
         myBtn4 = findViewById(R.id.spoify);
         myBtn5 = findViewById(R.id.news);
+        myBtn6=findViewById(R.id.stackoverflow);
         urls[0] = " https://www.jiosaavn.com/";
         urls[1] = "https://movierulzhd.site/";
         urls[2]="https://ww3.5movierulz.mg/";
         urls[3]="https://www.google.com/search?q=google+live+score+cricket&rlz=1C1CHBF_enIN977IN978&oq=google+live+score&aqs=chrome.1.69i57j0i20i263i512j0i512l7j0i20i263i512.12106j0j4&sourceid=chrome&ie=UTF-8#sie=lg;/g/11n1ntn76g;5;/m/021q23;mt;fp;1;;;";
         urls[4]="https://open.spotify.com/";
         urls[5]="https://www.inshorts.com/en/read";
+        urls[6]="https://stackoverflow.com/";
         myBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -82,6 +84,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, webview.class);
                 intent.putExtra(" links ", urls[5]);
+                startActivity(intent);
+            }
+        });
+        myBtn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, webview.class);
+                intent.putExtra(" links ", urls[6]);
                 startActivity(intent);
             }
         });

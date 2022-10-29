@@ -110,6 +110,15 @@
                 android:backgroundTint="#FB0C0C"
                 android:text="Inshorts news"
                 tools:ignore="TextContrastCheck" />
+            <Button
+                android:id="@+id/stackoverflow"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_marginTop="40dp"
+                android:background="#F40505"
+                android:backgroundTint="#FB0C0C"
+                android:text="StackOverflow"
+                tools:ignore="TextContrastCheck" />
 
         </LinearLayout>
     </ScrollView>
